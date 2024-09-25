@@ -5,7 +5,6 @@ namespace W5_assignment_template.Models
     public class Ghost : IEntity
     {
         public string Name { get; set; }
-        public IFlyable Flyable { get; set; }
         
         public void Attack(IEntity target)
         {
