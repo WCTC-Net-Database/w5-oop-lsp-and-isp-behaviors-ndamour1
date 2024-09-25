@@ -15,4 +15,19 @@ public class Character : IEntity
     {
         Console.WriteLine($"{Name} moves forward.");
     }
+
+    public void Fly()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void Shoot(IEntity target)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void Cast(IEntity target, string spellName)
+    {
+        throw new NotImplementedException();
+    }
 }
