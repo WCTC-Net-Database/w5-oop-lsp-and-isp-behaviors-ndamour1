@@ -8,6 +8,6 @@ namespace W5_assignment_template.Interfaces
 {
     public interface ICastable
     {
-        CastSpell(IEntity target, string spellName);
+        void CastSpell(IEntity target, string spellName);
     }
 }
