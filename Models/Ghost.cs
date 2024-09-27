@@ -2,7 +2,7 @@
 
 namespace W5_assignment_template.Models
 {
-    public class Ghost : IEntity
+    public class Ghost : IEntity, IFlyable
     {
         public string Name { get; set; }
         
