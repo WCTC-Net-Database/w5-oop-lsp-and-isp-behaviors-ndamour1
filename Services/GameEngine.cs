@@ -35,7 +35,7 @@ namespace W5_assignment_template.Services
             ((Archer)_archer).Shoot(_goblin);
 
             _mage.Move();
-            ((Mage)_mage).Cast(_ghost, "Crush");
+            ((Mage)_mage).CastSpell(_ghost, "Crush");
 
             _goblin.Move();
             _goblin.Attack(_character);
