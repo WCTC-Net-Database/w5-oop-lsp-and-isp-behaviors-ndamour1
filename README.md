@@ -120,10 +120,9 @@ Here are some resource links to help students better understand the concepts cov
 2. **Fly()** - a method from the IFlayable interface that determines whether an entity can or cannot fly.
 3. **IShootable** - an interface instantiates the Shoot() method.
 4. **Shoot()** - a method from the IShootable interface that determines whether or not an entity can fire a bow from an arrow and shoot at a target.
-5. **Archer** - a class that inherits from the IEntity interface that wields a bow and arrow, and is thus possesses the Shoot() method.
+5. **Archer** - a class that inherits from the IEntity interface in which the entity wields a bow and arrow that now also inherits from the IShootable interface, allowing them to use the Shoot() method.
 6. **ICastable** - an interface that instantiates the Cast() method, which utilizes the CastSpell constructor.
-7. **Cast()** - a method from the ICastable interface that determines whether or not an entity can cast a designated spell at a target.
-8. **CastSpell()** - a constructor from the ICastable interface used to designates the criteria for using the Cast() method: the caster's target and what spell they are using.
-9. **Mage** - a class that inherits from the IEntity interface that is able to cast spells, and is thus possesses the Cast() method.
-10. **Entities** - an archer and a mage have been added to the GameEngine and Program classes and are desigated as the superheroes Hawkeye and Doctor Fate. The regular character has been named Blast Hardcheese, the goblin has been named Snorg, and the ghost has been named Z'Skayr.
- 11. **Combat** - Hawkeye attacks Snorg with the Shoot() method, Doctor Fate targets Z'Sakyr with the Cast() method, and Z'Sakyr now targets Doctor Fate.
+7. **CastSpell()** - a constructor from the ICastable interface used to determines whether or not an entity can cast a designated spell at a target using two criteria: the caster's target and what spell they are using.
+8. **Mage** - a class that inherits from the IEntity interface that now also inherits from the ICastable interface, allowing them to cast spells through the CastSpell() method.
+9. **Entities** - an archer and a mage have been added to the GameEngine and Program classes and are desigated as the superheroes Hawkeye and Doctor Fate. The regular character has been named Blast Hardcheese, the goblin has been named Snorg, and the ghost has been named Z'Skayr.
+10. **Combat** - Hawkeye attacks Snorg with the Shoot() method, Doctor Fate targets Z'Sakyr with the CastSpell() method, and Z'Sakyr now targets Doctor Fate.
