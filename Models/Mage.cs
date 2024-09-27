@@ -7,7 +7,7 @@ using W5_assignment_template.Interfaces;
 
 namespace W5_assignment_template.Models
 {
-    public class Mage : IEntity
+    public class Mage : IEntity, ICastable
     {
         public string Name { get; set; }
 
@@ -31,7 +31,7 @@ namespace W5_assignment_template.Models
             throw new NotImplementedException();
         }
 
-        public void Cast(IEntity target, string spellName)
+        public void CastSpell(IEntity target, string spellName)
         {
             Console.WriteLine($"{Name} cast {spellName} on {target.Name}.");
         }
