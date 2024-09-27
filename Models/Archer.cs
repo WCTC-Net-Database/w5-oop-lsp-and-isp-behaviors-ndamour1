@@ -16,14 +16,14 @@ namespace W5_assignment_template.Models
             Console.WriteLine($"{Name} attacks {target.Name}");
         }
 
-        public void Fly()
-        {
-            throw new NotImplementedException();
-        }
-
         public void Move()
         {
             Console.WriteLine($"{Name} moves forward.");
+        }
+
+        public void Fly()
+        {
+            throw new NotImplementedException();
         }
 
         public void Shoot(IEntity target)
